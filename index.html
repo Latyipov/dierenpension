@@ -15,53 +15,59 @@
 <body>
 
     <div class='underheader'>
-        <div class='container flexible-container'>
-            <div class='social-head'>
-                <a class='facebook-btn' href='#'></a>
-                <a class='insta-btn' href='#'></a>
+        <div class='underheader__container container flexible-container'>
+            <div class='underheader__contact-block'>
+                <a class='underheader__social-btn underheader__facebook-btn' href='#'></a>
+                <a class='underheader__social-btn underheader__insta-btn' href='#'></a>
             </div>
-            <div class='phone-head'>
-                <a class='contact-phone-number' href='tel:0115727000'>0115-727000</a>
+            <div class='underheader__contact-block'>
+                <a class='underheader__phone-btn' href='tel:0115727000'>0115-727000</a>
             </div>
         </div>
     </div>
-    <div class='logo-menu flexible-container'>
-        <div class="logo">
-            <img src="img/logo1.jpg" alt="VanDeVelde">
-        </div>
-        <div class="menu hamburger-menu">
-            <input id='menu_toggle' type='checkbox' />
-            <label class='menu_btn' for='menu_toggle'>
-                <span></span>
-            </label>
-            <nav class="navigation">
-                <ul class='flexible-container'>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Hondenschool</a></li>
-                    <li><a href='#'>Dierenpension</a></li>
-                    <li><a href='#'>Trimsalon</a></li>
-                    <li><a href='#'>Over ons</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
-            </nav>
+
+    <div class="navigation-container">
+        <div id='sticky-menu' class='navigation flexible-container'>
+            <div class="navigation__logo-container">
+                <img class="navigation__logo-img" src="img/logo1.jpg" alt="VanDeVelde">
+            </div>
+            <div class="navigation__menu-container hamburger-menu">
+                <input class='hamburger-input' id='menu_toggle' type='checkbox' />
+                <label class='hamburger-btn' for='menu_toggle'>
+                    <span></span>
+                </label>
+                <nav class="navigation__menu">
+                    <ul class='navigation__list flexible-container'>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Home</a></li>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Hondenschool</a></li>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Dierenpension</a></li>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Trimsalon</a></li>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Over ons</a></li>
+                        <li class='navigation__element'><a class='navigation__link' href='#'>Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
-    <header>
+    <header id='header' class='header'>
         <div class='container'>
-            <h1><span>Van de Velde</span></br> Hondenschool &#8226; Dierenpension &#8226; Trimsalon</h1>
-            <section class='futures'>
-                <ul class='flexible-container'>
-                    <li>
-                        <p>25 year</p>
-                        <p>Great expereance</p>
+            <h1 class='header__title'>
+                <span class="header__title-name">Van de Velde</span></br>
+                <span class="header__title-services">Hondenschool &#8226; Dierenpension &#8226; Trimsalon</span>
+            </h1>
+            <section class='header__features'>
+                <ul class='header__features-container flexible-container'>
+                    <li class='header__features-block'>
+                        <p class='header__feature-head'>25 year</p>
+                        <p class='header__feature'>Great expereance</p>
                     </li>
-                    <li class=''>
-                        <p>100000</p>
-                        <p>Happy customers</p>
+                    <li class='header__features-block'>
+                        <p class='header__feature-head'>100000</p>
+                        <p class='header__feature'>Happy customers</p>
                     </li>
-                    <li class=''>
-                        <p>inf</p>
-                        <p>love and care for pets</p>
+                    <li class='header__features-block'>
+                        <p class='header__feature-head'>inf</p>
+                        <p class='header__feature'>love and care for pets</p>
                     </li>
                 </ul>
             </section>
@@ -69,57 +75,61 @@
     </header>
     <main>
         <section class='about-us container flexible-container'>
-            <div class='container-for-text'>
+            <div class='about-us__text-container'>
                 <h2>Our family farm</h2>
                 <p> we opened in ..... </br> we love pets and alwaus develope and upgrate... </br> we will happy have frendship with you...
                 </p>
                 <a class='btn-style' href="#">read more</a>
             </div>
-            <img src="img/Untitled.png" alt="Famaly photos">
+            <div class="about-us__img-container">
+                <img class='about-us__img' src="img/Untitled.png" alt="Famaly photos">
+            </div>
         </section>
         <section class='dogschool flexible-container'>
-            <div class='border-for-text'>
-                </divclass>
+            <div class='main-section__text-container'>
                 <h2>Hondenschool</h2>
                 <p> method... </br> profeesional teachers... </br> understand and conversation with you pet...
                 </p>
                 <a class='btn-style' href="*">read more</a>
             </div>
-            <div class='img-border'>
-                <img src="img/HONDENSCHOOL1.jpg" alt="HONDENSCHOOL">
+            <div class='main-section__img-container'>
+                <img class='main-section__img' src="img/HONDENSCHOOL1.jpg" alt="Hondenschool">
             </div>
         </section>
         <section class='pet-boarding flexible-container'>
-            <div class='border-for-text'>
+            <div class='main-section__text-container'>
                 <h2>Dierenpension</h2>
                 <p>
-                    We happy to invite you... spacious and heating apart... vet... playzone... we select partners for a walk...
+                    We happy to invite you... </br>spacious and heating apart... </br>vet... playzone...</br>we select partners for a walk...
                 </p>
                 <a class='btn-style' href="*">read more</a>
             </div>
-            <div class='img-border'>
-                <img src="img/deirenpension.png" alt="HONDENSCHOOL">
+            <div class='main-section__img-container'>
+                <img class="main-section__img" src="img/deirenpension.png" alt="Dierenpension">
             </div>
         </section>
         <section class='trimsalon flexible-container'>
-            <div class='border-for-text'>
+            <div class='main-section__text-container'>
                 <h2>Trimsalon</h2>
                 <p> profeesional trim... </br> certificate... </br> happy pets ...
                 </p>
                 <a class='btn-style' href="*">read more</a>
             </div>
-            <div class='img-border'>
-                <img src="img/trimsalon.png" alt="HONDENSCHOOL">
+            <div class='main-section__img-container'>
+                <img class="main-section__img" src="img/trimsalon.png" alt="Trimsalon">
             </div>
 
         </section>
         <section class='photos-and-social'>
-            <div class="social flexible-container">
-                <h2>subscribe for us insta and facebook and look more happy customers </h2>
-                <a class='social-btn insta-btn' href='#'>instagram</a>
-                <a class='social-btn facebook-btn' href='#'>facebook</a>
+            <div class="photos-and-social__social-container flexible-container">
+                <h2 class="photos-and-social__title">subscribe for us insta and facebook and look more happy customers
+                </h2>
+                <div class="photos-and-social__links-container">
+                    <a class='photos-and-social__link photos-and-social__insta-btn' href='#'>instagram</a>
+                    <a class='photos-and-social__link photos-and-social__facebook-btn' href='#'>facebook</a>
+                </div>
             </div>
-            <div class='carousel'>
+            <div class='photos-and-social_carousel-container'>
                 <div class='container'>
                     <div id="carouselExampleIndicators" class="carousel slide" data-touch="false" data-interval="false">
                         <ol class="carousel-indicators">
@@ -150,24 +160,26 @@
                 </div>
             </div>
         </section>
-        <section class='contact'>
-            <div class='map'>
+        <section class='contact flexible-container'>
+            <div class='contact__map-container'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19963.66613088971!2d3.8297096614990136!3d51.28429027042968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c481d642871195%3A0x808e254af9b19eb!2sDierenpension%20-%20Trimsalon%20van%20de%20Velde!5e0!3m2!1snl!2snl!4v1622551779521!5m2!1snl!2snl"
                     width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <address class='flexible-container'>
-                <div>
-                    <h3>Address</h3>
-                    <a class='contact-adress' href='https://goo.gl/maps/eWrL16L3JrKg8w9e7'>4517 Washington Ave.
+            <address class='contact__address-container flexible-container'>
+                <div class='contact__address-box'>
+                    <h3 class='contact__title'>Address</h3>
+                    <a class='contact__link contact-adress-icon' href='https://goo.gl/maps/eWrL16L3JrKg8w9e7'>4517
+                        Washington Ave.
                         Manchester, Kentucky 39495</a>
                 </div>
-                <div>
-                    <h3>Phone</h3>
-                    <a class='contact-phone-number' href='tel:(480) 555-0103'>(480) 555-0103</a>
+                <div class='contact__address-box'>
+                    <h3 class='contact__title'>Phone</h3>
+                    <a class='contact__link contact-phone-number-icon' href='tel:(480) 555-0103'>(480) 555-0103</a>
                 </div>
-                <div>
-                    <h3>E-mail</h3>
-                    <a class='contact-email' href='mailto:debra.holt@example.com'>debra.holt@example.com</a>
+                <div class='contact__address-box'>
+                    <h3 class='contact__title'>E-mail</h3>
+                    <a class='contact__link contact-email'
+                        href='mailto:debra.holt@example.com'>debra.holt@example.com</a>
                 </div>
 
             </address>
@@ -175,55 +187,58 @@
     </main>
     <footer class='footer flexible-container'>
 
-        <div class='sitemap flexible-container'>
-            <div class="sitemap-block">
-                <h3>Hondenschool</h3>
-                <ul>
-                    <li><a href='#'>Methode</a></li>
-                    <li><a href='#'>Instructeurs</a></li>
-                    <li><a href='#'>Lesdata</a></li>
-                    <li><a href='#'>Uitslag wedstrijd</a></li>
-                    <li><a href='#'>Fotoalbum</a></li>
+        <div class='footer__sitemap-container flexible-container'>
+            <div class="footer__sitemap-block">
+                <h3 class="footer__sitemap-title">Hondenschool</h3>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Methode</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Instructeurs</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Lesdata</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Uitslag wedstrijd</a>
+                    </li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Fotoalbum</a></li>
                 </ul>
             </div>
-            <div class="sitemap-block">
-                <h3>Dierenpension</h3>
-                <ul>
-                    <li><a href='#'>Honden</a></li>
-                    <li><a href='#'>Katten</a></li>
-                    <li><a href='#'>Prijslijst</a></li>
-                    <li><a href='#'>Inentingen</a></li>
-                    <li><a href='#'>Openingstijden</a></li>
-                    <li><a href='#'>Reserveren</a></li>
-                    <li><a href='#'>Algemene voorwaarden</a></li>
-                    <li><a href='#'>Fotoalbum</a></li>
+            <div class="footer__sitemap-block">
+                <h3 class="footer__sitemap-title">Dierenpension</h3>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Honden</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Katten</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Prijslijst</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Inentingen</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Openingstijden</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Reserveren</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Algemene
+                            voorwaarden</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Fotoalbum</a></li>
                 </ul>
             </div>
-            <div class="sitemap-block">
-                <h3>Trimsalon</h3>
-                <ul>
-                    <li><a href='#'>Behandelingen</a></li>
-                    <li><a href='#'>Informatie</a></li>
-                    <li><a href='#'>Katten - Konijnen</a></li>
-                    <li><a href='#'>Prijslijst</a></li>
-                    <li><a href='#'>Fotoalbum</a></li>
+            <div class="footer__sitemap-block">
+                <h3 class="footer__sitemap-title">Trimsalon</h3>
+                <ul class="footer__sitemap-list">
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Behandelingen</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Informatie</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Katten - Konijnen</a>
+                    </li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Prijslijst</a></li>
+                    <li class="footer__sitemap-element"><a class="footer__sitemap-link" href='#'>Fotoalbum</a></li>
                 </ul>
             </div>
         </div>
-        <div class='footer-contacts'>
-            <h3>Contacts</h3>
-            <ul>
-                <li><a class='contact-phone-number' href='tel:(480) 555-0103'>(480) 555-0103</a></li>
-                <li><a class='contact-adress' href='https://goo.gl/maps/eWrL16L3JrKg8w9e7'>4517 Washington Ave.
-                            Manchester, Kentucky 39495</a></li>
-                <li><a class='contact-email' href='mailto:debra.holt@example.com'>debra.holt@example.com</a></li>
-                <li><a href='#'>facebook</a></li>
-                <li><a href='#'>Instagram</a></li>
+        <div class='footer__contacts'>
+            <h3 class='footer__contacts-title'>Contacts</h3>
+            <ul class='footer__contacts-list'>
+                <li class='footer__contacts-element'><a class='footer__contacts-link footer__contacts-phone-link' href='tel:(480) 555-0103'>(480) 555-0103</a></li>
+                <li class='footer__contacts-element'><a class='footer__contacts-link footer__contacts-adress-link' href='https://goo.gl/maps/eWrL16L3JrKg8w9e7'>4517 Washington Ave.
+                        Manchester, Kentucky 39495</a></li>
+                <li class='footer__contacts-element'><a class='footer__contacts-link footer__contacts-email-link' href='mailto:debra.holt@example.com'>debra.holt@example.com</a></li>
+                <li class='footer__contacts-element'><a class='footer__contacts-link footer__contacts-facebook-link' href='#'>facebook</a></li>
+                <li class='footer__contacts-element'><a class='footer__contacts-link footer__contacts-instagram-link' href='#'>Instagram</a></li>
             </ul>
         </div>
     </footer>
 
-
+    <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
